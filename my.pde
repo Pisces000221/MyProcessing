@@ -15,18 +15,15 @@ float[][] pos = new float[][]{
 float[][] moved = new float[15][2];
 float[][] additionalPos = new float[15][2];
 float[] moveFactor =
-  {0.2, 0.2, 0.2, 0.2, 0.2, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0, 0};
+  {0.2, 0.2, 0.2, 0.2, 0.2, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1};
 float maxAdditional = 5, deltaAdditional = 1;
 float mouthRad = 27, footWidth = 50, footYAdj = 10;
 
 void setup() {
-  size(600, 600, OPENGL);
-  hint(DISABLE_OPENGL_2X_SMOOTH);
-  hint(ENABLE_OPENGL_4X_SMOOTH);
-  smooth();
+  size(600, 600);
   noFill();
   strokeWeight(15);
-  rectMode(CORNERS);
+  smooth();
 }
 
 float change(float val, float min, float max, float delta)
