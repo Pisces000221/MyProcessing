@@ -14,6 +14,8 @@ float[][] pos = new float[][]{
 };
 float[][] moved = new float[15][2];
 float[][] additionalPos = new float[15][2];
+// The real position of the i-th element is (float[2] is treated as one point):
+//  pos[i] + (mousePos - pos[i]) * moveFactor[i] + additionalPos[i]
 float[] moveFactor =
   {0.2, 0.2, 0.2, 0.2, 0.2, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.05, 0.05};
 float maxAdditional = 5, deltaAdditional = 1;
