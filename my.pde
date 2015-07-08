@@ -37,7 +37,7 @@ float weighted(float a, float b, float w)
 { return a * w + b * (1 - w); }
 
 void draw() {
-  clear();
+  //clear();
   background(192);
 
   for (int i = 0; i < 15; ++i) {
