@@ -24,6 +24,7 @@ void setup() {
   noFill();
   strokeWeight(15);
   rectMode(CORNERS);
+  smooth();
 }
 
 float change(float val, float min, float max, float delta)
