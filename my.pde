@@ -20,11 +20,13 @@ float maxAdditional = 5, deltaAdditional = 1;
 float mouthRad = 27, footWidth = 50, footYAdj = 10;
 
 void setup() {
-  size(600, 600);
+  size(600, 600, OPENGL);
+  hint(DISABLE_OPENGL_2X_SMOOTH);
+  hint(ENABLE_OPENGL_4X_SMOOTH);
+  smooth();
   noFill();
   strokeWeight(15);
   rectMode(CORNERS);
-  smooth();
 }
 
 float change(float val, float min, float max, float delta)
