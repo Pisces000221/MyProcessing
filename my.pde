@@ -15,7 +15,7 @@ float[][] pos = new float[][]{
 float[][] moved = new float[15][2];
 float[][] additionalPos = new float[15][2];
 float[] moveFactor =
-  {0.2, 0.2, 0.2, 0.2, 0.2, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1};
+  {0.2, 0.2, 0.2, 0.2, 0.2, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.05, 0.05};
 float maxAdditional = 5, deltaAdditional = 1;
 float mouthRad = 27, footWidth = 50, footYAdj = 10;
 
